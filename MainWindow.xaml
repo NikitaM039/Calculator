@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculator1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="Mult" FontSize="23" Click="Button_Click" Content="Умножить" HorizontalAlignment="Left" Margin="73,182,0,0" VerticalAlignment="Top" Height="50" Width="120"/>
+        <Button Name="Div" FontSize="23" Click="Button_Click" Content="Разделить" HorizontalAlignment="Left" Margin="253,182,0,0" VerticalAlignment="Top" Height="50" Width="120"/>
+        <Button Name="Add" FontSize="23" Click="Button_Click" Content="Прибавить" HorizontalAlignment="Left" Margin="433,182,0,0" VerticalAlignment="Top" Height="50" Width="120"/>
+        <Button Name="Sub" FontSize="23" Click="Button_Click" Content="Вычесть" HorizontalAlignment="Left" Margin="613,182,0,0" VerticalAlignment="Top" Height="50" Width="120"/>
+        <TextBox Name="InputText" FontSize="30" Text="" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="95,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260" Height="64"/>
+        <Label Name="Answer" FontSize="30" BorderThickness="1" BorderBrush="Black" Content="Итог" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="455,41,0,0" VerticalAlignment="Top" Height="64" Width="260"/>
+        <Button Name="Cancel" Content="ОТМЕНИТЬ" Click="Button_Click" FontSize="30" HorizontalAlignment="Left" Margin="57,260,0,0" VerticalAlignment="Top" Height="147" Width="682" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.292"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
